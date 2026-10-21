@@ -38,6 +38,7 @@ body {
 }
 .navbar a:hover { background: var(--nen); }
 .active { color: red; font-weight: bold; }
+.navbar a.active { color: red; font-weight: bold; background: #fef2f2; }
 
 .container {
   max-width: 960px;
