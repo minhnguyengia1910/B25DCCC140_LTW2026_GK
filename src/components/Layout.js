@@ -14,7 +14,6 @@ const Layout = ({ loading, error, buildTag }) => {
     <div className="app">
       <NavBar />
       <main className="container">{noiDung}</main>
-      <footer className="footer">{`Thư viện khoa · bản dựng ${buildTag}`}</footer>
     </div>
   );
 };

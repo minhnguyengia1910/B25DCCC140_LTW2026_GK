@@ -1,5 +1,3 @@
-const BUILD_TAG = "qf-2817";
-/* eslint-disable import/first */
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
@@ -72,7 +70,7 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<Layout loading={loading} error={error} buildTag={BUILD_TAG} />}>
+      <Route path="/" element={<Layout loading={loading} error={error}/>}>
         <Route index element={<Home books={books} />} />
         <Route path="books" element={<BookList books={books} onToggle={toggleBook} onDelete={deleteBook} />} />
         <Route path="books/new" element={<AddBook onAdd={addBook} />} />
